@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Class SMAMDA</title>
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="a.css">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://website-kamu.com/">
+    <meta property="og:title" content="Judul Keren Website Kamu">
+    <meta property="og:description" content="Deskripsi singkat yang muncul di bawah judul saat di-share.">
+    <meta property="og:image" content="https://website-kamu.com/images/thumbnail-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+</head>
+
+<body>
+    <!-- =============== NAVBAR =============== -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo dan Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img id="navbarLogo" src="logo_smamda_putih2.png" 
+                     class="me-2" width="70" alt="Logo SMAMDA">
+                <span class="brand-name">CodingClass</span>
+            </a>
+
+            <!-- Toggle Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="showPage('beranda')">
+                            <i class="bi bi-house-door me-1"></i> Beranda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('game')">
+                            <i class="bi bi-controller me-1"></i> Game
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('tentang')">
+                            <i class="bi bi-people me-1"></i> Tentang Kami
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('kontak')">
+                            <i class="bi bi-envelope me-1"></i> Kontak
+                        </a>
+                    </li>
+                    
+                    <!-- Theme Toggle -->
+                    <li class="nav-item">
+                        <div class="theme-toggle" id="navbarThemeToggle">
+                            <i class="bi bi-sun-fill light-mode-icon"></i>
+                            <i class="bi bi-moon-fill dark-mode-icon"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============== HALAMAN BERANDA =============== -->
+    <div id="beranda" class="page active">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-glow"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left Content -->
+                    <div class="col-lg-6 hero-content">
+                        <h1 class="hero-title">
+                            Coding Class <span class="code-font">SMAMDA</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Coding class atau kelas koding adalah program pembelajaran yang dirancang 
+                            untuk melatih keterampilan bahasa pemrograman komputer.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-game" onclick="showPage('game')">
+                                <i class="bi bi-controller me-2"></i> Coba Challenge
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Content -->
+                    <div class="col-lg-6 text-center">
+                        <div class="code-block hero-code">
+                            <pre><code><span class="code-comment">// Welcome to Coding Class</span>
+<span class="code-keyword">const</span> student = {
+  name: <span class="code-string">"SMAMDA Student"</span>,
+  skill: <span class="code-string">"Coding"</span>,
+  future: <span class="code-string">"Bright 🚀"</span>
+};
+<span class="code-function">console</span>.log(student);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating Shapes -->
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        
+        <!-- Divider -->
+        <div class="divider"></div>
+        
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="stat-number">48</div>
+                        <div class="stat-label">Peserta Didik Aktif</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-trophy-fill"></i>
+                        </div>
+                        <div class="stat-number">99+</div>
+                        <div class="stat-label">Prestasi</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-calendar-check-fill"></i>
+                        </div>
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Semester Pembelajaran</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-bar-chart-fill"></i>
+                        </div>
+                        <div class="stat-number">50:50</div>
+                        <div class="stat-label">Kurikulum Merdeka : CCP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Divider -->
+        <div class="divider"></div>
+        
+        <!-- Features Section -->
+        <div class="features-section">
+            <div class="container">
+                <h2 class="section-title">Fitur <span class="highlight">Unggulan Kami</span></h2>
+                <p class="section-subtitle">
+                    Kami menyediakan berbagai fitur unggulan untuk mendukung proses belajar coding 
+                    yang efektif dan menyenangkan
+                </p>
+                
+                <!-- Top Row -->
+                <div class="row mb-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="feature-title">Pembelajaran Hybrid</h3>
+                            <p class="feature-description">
+                                Kombinasi pembelajaran tatap muka dan online dengan materi yang 
+                                terstruktur dan mudah diakses kapan saja.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">
+                                <i class="bi bi-code-square"></i>
+                            </div>
+                            <h3 class="feature-title">Project-Based Learning</h3>
+                            <p class="feature-description">
+                                Belajar melalui proyek nyata untuk membangun portofolio dan 
+                                mengasah keterampilan pemecahan masalah.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">
+                                <i class="bi bi-robot"></i>
+                            </div>
+                            <h3 class="feature-title">Game Edukasi Coding</h3>
+                            <p class="feature-description">
+                                Belajar coding menjadi lebih menyenangkan dengan game-game 
+                                interaktif yang dirancang khusus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom Row -->
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">
+                                <i class="bi bi-person-badge"></i>
+                            </div>
+                            <h3 class="feature-title">Mentor Berpengalaman</h3>
+                            <p class="feature-description">
+                                Didampingi oleh mentor yang berpengalaman di industri teknologi 
+                                dengan pendekatan personalized.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h3 class="feature-title">Kompetisi & Sertifikasi</h3>
+                            <p class="feature-description">
+                                Kesempatan mengikuti kompetisi coding dan mendapatkan sertifikasi 
+                                yang diakui industri.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="feature-title">Komunitas Aktif</h3>
+                            <p class="feature-description">
+                                Bergabung dengan komunitas programmer muda untuk berkolaborasi 
+                                dan berkembang bersama.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============== HALAMAN GAME =============== -->
+    <div id="game" class="page">
+        <section class="section challenge-section">
+            <div class="container">
+                <!-- Header -->
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Coding Challenge</h2>
+                    <p class="section-subtitle">
+                        Belajar coding lewat tantangan interaktif & menyenangkan
+                    </p>
+                </div>
+
+                <div class="row g-4 align-items-stretch">
+                    <!-- Left: Info & Progress -->
+                    <div class="col-lg-4">
+                        <div class="challenge-card">
+                            <h4 class="mb-3" id="levelTitle">
+                                <i class="fas fa-flag-checkered me-2"></i> Level 1
+                            </h4>
+
+                            <p class="challenge-desc" id="challengeDesc">
+                                Buat judul <strong>"Coding Class CCP"</strong> menggunakan tag
+                                <code>&lt;h1&gt;</code>.
+                            </p>
+
+                            <div class="challenge-meta">
+                                <span id="challengeCategory">
+                                    <i class="fas fa-layer-group"></i> HTML Dasar
+                                </span>
+                                <span>
+                                    <i class="fas fa-clock"></i> ±5 menit
+                                </span>
+                            </div>
+
+                            <div class="progress mt-4">
+                                <div class="progress-bar" id="progressBar" style="width: 20%"></div>
+                            </div>
+
+                            <p class="progress-text" id="progressText">
+                                Progress: 1 / 5
+                            </p>
+
+                            <div class="reward" id="rewardBadge">
+                                <i class="fas fa-medal"></i> Badge HTML Beginner
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Editor -->
+                    <div class="col-lg-8">
+                        <div class="challenge-card">
+                            <div class="editor-grid">
+                                <div>
+                                    <label class="editor-label">HTML</label>
+                                    <textarea id="htmlCode" placeholder="Tulis HTML di sini..."></textarea>
+                                </div>
+
+                                <div>
+                                    <label class="editor-label">CSS</label>
+                                    <textarea id="cssCode" placeholder="Tulis CSS di sini..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="preview-box mt-3">
+                                <label class="editor-label">Tampilkan</label>
+                                <iframe id="previewFrame"></iframe>
+                            </div>
+
+                            <div class="d-flex gap-2 mt-3">
+                                <button class="btn btn-primary w-50" onclick="runChallenge()">
+                                    <i class="fas fa-play me-2"></i> Tampilkan
+                                </button>
+                                <button class="btn btn-success w-50" onclick="checkChallenge()">
+                                    <i class="fas fa-check-circle me-2"></i> Cek Jawaban
+                                </button>
+                            </div>
+
+                            <div id="challengeResult" class="success-box">
+                                🎉 Level selesai! Lanjut ke tantangan berikutnya.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- =============== HALAMAN TENTANG =============== -->
+    <div id="tentang" class="page">
+        <div class="tentang">
+            <div class="container">
+                <h2 class="section-title">Tentang <span class="highlight">Kami</span></h2>
+                
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="about-content fade-in">
+                            <h3 class="mb-4">Coding Class SMAMDA</h3>
+                            <p>
+                                Coding Class Program (CCP) SMAMDA Sidoarjo merupakan program unggulan 
+                                yang dirancang untuk membekali siswa kelas X hingga XII dengan 
+                                keterampilan teknologi dan pemrograman yang relevan dengan kebutuhan 
+                                masa depan.
+                            </p>
+                            
+                            <p>
+                                Program ini mencakup berbagai bidang, mulai dari pengembangan web 
+                                (HTML, CSS, JavaScript), Internet of Things (IoT), desain game dan 
+                                UI/UX, hingga pengerjaan proyek nyata berbasis teknologi. Dengan 
+                                kurikulum khusus dan pendampingan profesional yang didukung oleh 
+                                kerja sama dengan perguruan tinggi, CCP tidak hanya mengajarkan 
+                                coding, tetapi juga membentuk pola pikir kritis, kreatif, dan solutif.
+                            </p>
+
+                            <p>
+                                Melalui pembelajaran berbasis praktik dan proyek, Coding Class SMAMDA 
+                                telah melahirkan siswa-siswa berprestasi yang mampu bersaing dalam 
+                                kompetisi siber dan teknologi, serta siap menghadapi tantangan dunia 
+                                digital.
+                            </p>
+                            
+                            <h4 class="mt-5 mb-4">Visi & Misi</h4>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="card border-0 bg-primary bg-opacity-10 p-3 h-100">
+                                        <h5><i class="bi bi-eye me-2"></i> Visi</h5>
+                                        <p class="mb-0">
+                                            Menjadi pusat pembelajaran coding yang unggul untuk 
+                                            mencetak generasi muda kreatif, inovatif, dan mahir teknologi.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card border-0 bg-primary bg-opacity-10 p-3 h-100">
+                                        <h5><i class="bi bi-bullseye me-2"></i> Misi</h5>
+                                        <ul class="mb-0 ps-3">
+                                            <li>Meningkatkan literasi teknologi dan keterampilan pemrograman pada siswa</li>
+                                            <li>Menciptakan generasi yang mampu menciptakan solusi teknologi</li>
+                                            <li>Bekerja sama dengan lembaga teknologi untuk meningkatkan kualitas pengajaran</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============== HALAMAN KONTAK =============== -->
+    <div id="kontak" class="page">
+        <div class="kontak">
+            <div class="container">
+                <h2 class="section-title">Hubungi <span class="highlight">Kami</span></h2>
+                <p class="text-center mb-5">
+                    Ada pertanyaan tentang Coding Class SMAMDA? Jangan ragu untuk menghubungi 
+                    kami melalui form atau kontak di bawah ini.
+                </p>
+                
+                <!-- Contact Cards -->
+                <div class="row mb-5">
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-card text-center">
+                            <div class="contact-icon mx-auto">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <h5>Lokasi</h5>
+                            <p>Jl. Mojopahit 666 B, Sidoarjo, Jawa Timur</p>
+                            <a href="https://maps.app.goo.gl/qJm5zQshR5pHUJQA9" class="btn btn-outline-primary btn-sm">
+                                Lihat di Peta
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-card text-center">
+                            <div class="contact-icon mx-auto">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <h5>Telepon</h5>
+                            <p>+62-31-8921591 | Fax: 031 8957099</p>
+                            <p>Senin - Jumat: 08:00 - 17:00</p>
+                            <p>Sabtu: 09:00 - 14:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-card text-center">
+                            <div class="contact-icon mx-auto">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <h5>Email</h5>
+                            <p>smamda@smamda.sch.id</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="contact-form fade-in">
+                            <h3 class="mb-4">Kirim Pesan</h3>
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subjek</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Pesan</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        Kirim Pesan
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============== FOOTER =============== -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4">
+                    <div class="footer-title">
+                        <img src="logo_smamda_putih2.png" alt="CCP Smamda" height="50"> CCP Smamda
+                    </div>
+                    <p style="color: rgba(255,255,255,0.7); line-height: 1.7;">
+                        Coding Class Program (CCP) adalah program pembelajaran yang dirancang untuk 
+                        membangun keterampilan pemrograman melalui praktik langsung, logika, dan 
+                        teknologi digital masa kini.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="https://web.facebook.com/smamda/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/smamda_sda" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/smamdasidoarjo/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC6Osjh8gWBJj583D6Z4-rWw" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Menu -->
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-title">Menu</div>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="showPage('beranda')">Beranda</a></li>
+                        <li><a href="#" onclick="showPage('game')">Game</a></li>
+                        <li><a href="#" onclick="showPage('tentang')">Tentang Kami</a></li>
+                        <li><a href="#" onclick="showPage('kontak')">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Layanan -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-title">Layanan</div>
+                    <ul class="footer-links">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Kursus Online</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Kelas Virtual</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Sertifikasi</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Konsultasi</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Dukungan -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-title">Dukungan</div>
+                    <ul class="footer-links">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Pusat Bantuan</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">FAQ</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Kebijakan Privasi</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr style="border-color: rgba(255,255,255,0.1); margin: 2rem 0;">
+            
+            <!-- Copyright -->
+            <div class="text-center" style="color: rgba(255,255,255,0.6);">
+                <p style="margin: 0;">
+                    © 2025 CCP Smamda. Hak Cipta Dilindungi. | 
+                    Membangun Generasi Digital Kreatif dan Inovatif
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="j.js"></script>
+</body>
+</html>
